@@ -14,20 +14,35 @@
 Route::get('/', function () {
     return view('frontend.index');
 });
-
+Route::get('/tentang', function () {
+    return view('frontend.tentang');
+});
 Route::get('/layanan', function () {
     return view('frontend.layanan');
 });
-Route::get('/testimoni', function () {
-    return view('frontend.testimoni');
+Route::get('/kontak', function () {
+    return view('frontend.kontak');
+});
+Route::get('/galleri', function () {
+    return view('frontend.galleri');
 });
 Route::get('/produk', function () {
     return view('frontend.produk');
 });
-Route::get('/admin', function () {
-    return view('backend.admin');
+
+Route::group(['prefix' => 'admin'], function () {
+    
+    Route::resource('layanan', 'LayananController');
+    Route::resource('galleri', 'galleriController');
+    Route::resource('kategori', 'KategoriController');
+    Route::resource('produk', 'ProdukController');
 });
+Route::get('/admin', function () {
+        return view('backend.admin');
+    });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/layanan', 'FrontendController@layanan');
+Route::get('/galleri', 'FrontendController@galleri');

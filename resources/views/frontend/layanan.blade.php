@@ -1,337 +1,500 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Delta Salon</title>
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Delta Salon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/frontend/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="assets/frontend/css/animate.css">
-    
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/frontend/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/frontend/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/frontend/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/frontend/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/frontend/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="assets/frontend/css/aos.css">
-
-    <link rel="stylesheet" href="assets/frontend/css/ionicons.min.css">
-
-    <link rel="stylesheet" href="assets/frontend/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="assets/frontend/css/jquery.timepicker.css">
-
-    
+    <link rel="stylesheet" href="assets/frontend/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/frontend/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/frontend/css/nice-select.css">
     <link rel="stylesheet" href="assets/frontend/css/flaticon.css">
-    <link rel="stylesheet" href="assets/frontend/css/icomoon.css">
+    <link rel="stylesheet" href="assets/frontend/css/gijgo.css">
+    <link rel="stylesheet" href="assets/frontend/css/animate.css">
+    <link rel="stylesheet" href="assets/frontend/css/slicknav.css">
     <link rel="stylesheet" href="assets/frontend/css/style.css">
-  </head>
-  <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="/">Delta</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+    <!-- <link rel="stylesheet" href="assets/frontend/css/responsive.css"> -->
+</head>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	        <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="/layanan" class="nav-link">Layanan</a></li>
-	        	<li class="nav-item"><a href="/testimoni" class="nav-link">Galleri</a></li>
-	        	<li class="nav-item"><a href="/produk" class="nav-link">Produk</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-    
-    <section id="home-section" class="hero" style="background-image: url(assets/frontend/images/bg-2.jpg);" data-stellar-background-ratio="0.5">
-		  <div class="home-slider owl-carousel">
-	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text mt-5">
-		          		<span class="subheading">Delta Salon</span>
-						<h1 class="mb-4">Layanan Kami</h1>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
-    
-    <section class="services-section py-5 py-md-0 bg-light">
-      <div class="container">
-        <div class="row no-gutters d-flex">
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-makeup"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Makeup</h3>
-                <p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-flower"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Hair Styling</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services active d-block">
-              <div class="icon"><span class="flaticon-polish"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Nails</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon"><span class="flaticon-facial-treatment"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Body Treatment</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-services">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6 pr-md-4">
-    				<div class="heading-section pr-5 pb-5 ftco-animate">
-    					<h1 class="big">Rambut</h1>
-	          	<span class="subheading">Layanan untuk rambutmu</span>
-	            <h2 class="mb-4 mt-3">Membantu Rambut Anda terlihat Indah.</h2>
-	            <p>Investasikan pada rambut Anda, mahkota yang tidak pernah Anda lepas landas!</p>
-	          </div>
-	          <div class="services-wrap ftco-animate mb-5">
-	          	<a href="#" class="img d-flex align-items-end" style="background-image: url(assets/frontend/images/services-1.jpg);">
-	          	</a>
-	          	<div class="d-flex justify-content-end">
-		          	<div class="text d-flex align-items-center">
-		          		<div>
-			          		<h3><a href="#">Nama Treatment</a></h3>
-		          		</div>
-		          		<div class="btn-custom text-center align-self-stretch d-flex align-items-center">
-			          		<a href="#">Harga</a>
-		          		</div>
-		          	</div>
-	          	</div>
-	          </div>
-	          <div class="services-wrap ftco-animate mt-3">
-	          	<a href="#" class="img d-flex align-items-end" style="background-image: url(assets/frontend/images/services-2.jpg);">
-	          	</a>
-	          	<div class="d-flex justify-content-end">
-		          	<div class="text d-flex align-items-center">
-		          		<div>
-			          		<h3><a href="#">Nama Treatment</a></h3>
-		          		</div>
-		          		<div class="btn-custom text-center align-self-stretch d-flex align-items-center">
-			          		<a href="#">Harga</a>
-		          		</div>
-		          	</div>
-	          	</div>
-	          </div>
-    			</div>
-    			<div class="col-md-6 pl-md-4">
-    				<div class="services-wrap ftco-animate mb-5">
-	          	<a href="#" class="img d-flex align-items-end" style="background-image: url(assets/frontend/images/services-3.jpg);">
-	          	</a>
-	          	<div class="d-flex justify-content-end">
-		          	<div class="text d-flex align-items-center">
-		          		<div>
-			          		<h3><a href="#">Nama Treatment</a></h3>
-		          		</div>
-		          		<div class="btn-custom text-center align-self-stretch d-flex align-items-center">
-			          		<a href="#">Harga</a>
-		          		</div>
-		          	</div>
-	          	</div>
-	          </div>
-	          <div class="services-wrap ftco-animate mt-3">
-	          	<a href="#" class="img d-flex align-items-end" style="background-image: url(assets/frontend/images/services-4.jpg);">
-	          	</a>
-	          	<div class="d-flex justify-content-end">
-		          	<div class="text d-flex align-items-center">
-		          		<div>
-			          		<h3><a href="#">Nama Treatment</a></h3>
-		          		</div>
-		          		<div class="btn-custom text-center align-self-stretch d-flex align-items-center">
-			          		<a href="#">Harga</a>
-		          		</div>
-		          	</div>
-	          	</div>
-	          </div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <section class="ftco-section ftco-pricing">
-			<div class="container">
-				<div class="row justify-content-center pb-3">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big">MakeUp</h1>
-          	<span class="subheading">Layanan MakeUp</span>
-            <h2 class="mb-4">Jadilah cantik.</h2>
-            <p>Karena menjadi cantik seharusnya tidak pernah membahayakan Anda.</p>
-          </div>
-        </div>
-        <div class="row">
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">MakeUp</h3>
-	        			<p><span class="price">$50.00</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Hair Dryer</li>
-								<li>Hair Coloring</li>
-								<li>Hair Cut</li>
-								<li>Hair Dresser</li>
-								<li>Hair Spa</li>
-        			</ul>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">MakeUp</h3>
-	        			<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Manicure</li>
-								<li>Pedicure</li>
-								<li>Coloring</li>
-								<li>Nails</li>
-								<li>Nail Cut</li>
-        			</ul>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry active pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Makeup</h3>
-	        			<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Makeup</li>
-								<li>Professional Makeup</li>
-								<li>Blush On</li>
-								<li>Facial Massage</li>
-								<li>Facial Spa</li>
-        			</ul>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">MakeUp</h3>
-	        			<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Massage</li>
-								<li>Spa</li>
-								<li>Foot Spa</li>
-								<li>Body Spa</li>
-								<li>Relaxing</li>
-        			</ul>
-        		</div>
-        	</div>
-        </div>
-			</div>
-		</section>
-
-		<footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo">Delta</h2>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="logo-img">
+                                    <a href="index.html">
+                                        <img src="assets/frontend/img/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <<ul id="navigation">
+                                        <li><a class="active" href="/">home</a></li>
+                                        <li><a href="/layanan">Layanan</a></li>
+										<li><a href="/galleri">Galleri</a></li>
+										<li><a href="/produk">Produk</a></li>
+                                        <li><a href="/kontak">Kontak</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Tanya Jawab</a></li>
-                <li><a href="#" class="py-2 d-block">Pribadi</a></li>
-                <li><a href="#" class="py-2 d-block">Syarat & Ketentuan</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Tautan</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Home</a></li>
-                <li><a href="#" class="py-2 d-block">Layanan</a></li>
-                <li><a href="#" class="py-2 d-block">Galleri</a></li>
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Produk</a></li>
-                <li><a href="#" class="py-2 d-block">Kontak</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">punya pertanyaan?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </footer>
-    
-  
+    </header>
+    <!-- header-end -->
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- service_area_start -->
+    <div class="service_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title3 padding_plus text-center mb-90">
+                        <h3>Layanan kami</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="white_bg_pos">
+                    <div class="row">
+                    @foreach ($layanan as $data)
+                            <div class="col-xl-6">
+                                
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                            
+                                            <img id="myImg" src="{{ asset('assets/img/layanan/'.$data->Gambar) }}" alt="{{ $data->nama_layanan }}" style="width:100%;max-width:300px">
+
+                                            <!-- The Modal -->
+                                            <div id="myModal" class="modal">
+                                            <span class="close">&times;</span>
+                                            <img class="modal-content" id="img01">
+                                            <div id="caption"></div>
+                                            </div>
+                                        </div>
+                                        <span>{{ $data->nama_layanan }}</span>
+                                    </div>
+                                    <p>Rp {{ $data->harga_layanan }}</p>
+                                </div>
+                                
+                            </div>
+                            @endforeach
+                                <!-- <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/2.png" alt="">
+                                                                    
+                                        <span>Nama Layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/3.png" alt="">
+                                        </div>
+                                        <span>Nama layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/4.png" alt="">
+                                        </div>
+                                        <span>Nama Layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/5.png" alt="">
+                                        </div>
+                                        <span>Nama layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/6.png" alt="">
+                                        </div>
+                                        <span>Nama layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/7.png" alt="">
+                                        </div>
+                                        <span>Nama Layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/8.png" alt="">
+                                        </div>
+                                        <span>Nama Layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/9.png" alt="">
+                                        </div>
+                                        <span>Nama Layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                                <div class="single_service d-flex justify-content-between align-items-center">
+                                    <div class="service_inner d-flex align-items-center">
+                                        <div class="thumb">
+                                                <img src="assets/frontend/img/service/10.png" alt="">
+                                        </div>
+                                        <span>Nama Layanan</span>
+                                    </div>
+                                    <p>Harga</p>
+                                </div>
+                            </div> -->
+                        </div>
+            </div>
+        </div>
+    </div>
+    <!-- service_area_end -->
 
 
-  <script src="assets/frontend/js/jquery.min.js"></script>
-  <script src="assets/frontend/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="assets/frontend/js/popper.min.js"></script>
-  <script src="assets/frontend/js/bootstrap.min.js"></script>
-  <script src="assets/frontend/js/jquery.easing.1.3.js"></script>
-  <script src="assets/frontend/js/jquery.waypoints.min.js"></script>
-  <script src="assets/frontend/js/jquery.stellar.min.js"></script>
-  <script src="assets/frontend/js/owl.carousel.min.js"></script>
-  <script src="assets/frontend/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/frontend/js/aos.js"></script>
-  <script src="assets/frontend/js/jquery.animateNumber.min.js"></script>
-  <script src="assets/frontend/js/bootstrap-datepicker.js"></script>
-  <script src="assets/frontend/js/jquery.timepicker.min.js"></script>
-  <script src="assets/frontend/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="assets/frontend/js/google-map.js"></script>
-  <script src="assets/frontend/js/main.js"></script>
-    
-  </body>
+    <!-- cutter_muster_start -->
+    <div class="cutter_muster">
+        <div class="container">
+                <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section_title2 text-center mb-90">
+                                <i class="flaticon-scissors"></i>
+                                <h3>Our Cutter Masters</h3>
+                            </div>
+                        </div>
+                    </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/1.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Macau Wilium</h3>
+                            <p>Massage Master</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/2.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Dan Jacky</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/3.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Luka Luka</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/4.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Rona Dana</h3>
+                            <p>Ladies Cut</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cutter_muster_end -->
+
+    <!-- footer -->
+    <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-12 col-lg-">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Delta Salon
+                                </h3>
+                                <p class="footer_text doanar"> <a class="first" href="#">bla bla</a> <br>
+                               </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Alamat
+                                </h3>
+                                <p class="footer_text">Jl. Pasawahan Ruko B<br>
+                                    0875 5679 9743 <br>
+                                    <a class="domain" href="#"></a>Deltasalon@beautysalon.com</p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Navigasi
+                                </h3>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Tentang</a></li>
+                                    <li><a href="#">Layanan</a></li>
+									<li><a href="#">Galleri</a></li>
+									<li><a href="#">Produk</a></li>
+									<li><a href="#">Kontak</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- JS here -->
+    <script src="assets/frontend/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/frontend/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/frontend/js/popper.min.js"></script>
+    <script src="assets/frontend/js/bootstrap.min.js"></script>
+    <script src="assets/frontend/js/owl.carousel.min.js"></script>
+    <script src="assets/frontend/js/isotope.pkgd.min.js"></script>
+    <script src="assets/frontend/js/ajax-form.js"></script>
+    <script src="assets/frontend/js/waypoints.min.js"></script>
+    <script src="assets/frontend/js/jquery.counterup.min.js"></script>
+    <script src="assets/frontend/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/frontend/js/scrollIt.js"></script>
+    <script src="assets/frontend/js/jquery.scrollUp.min.js"></script>
+    <script src="assets/frontend/js/wow.min.js"></script>
+    <script src="assets/frontend/js/nice-select.min.js"></script>
+    <script src="assets/frontend/js/jquery.slicknav.min.js"></script>
+    <script src="assets/frontend/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/frontend/js/plugins.js"></script>
+    <script src="assets/frontend/js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="assets/frontend/js/contact.js"></script>
+    <script src="assets/frontend/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/frontend/js/jquery.form.js"></script>
+    <script src="assets/frontend/js/jquery.validate.min.js"></script>
+    <script src="assets/frontend/js/mail-script.js"></script>
+
+    <script src="assets/frontend/js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+        var timepicker = $('#timepicker').timepicker({
+         format: 'HH.MM'
+     });
+    </script>
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</body>
+
 </html>

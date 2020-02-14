@@ -15,6 +15,7 @@ class CreateGallerisTable extends Migration
     {
         Schema::create('galleris', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->String('Gambar');
             $table->timestamps();
         });
     }

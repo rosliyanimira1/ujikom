@@ -1,246 +1,366 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Delta Salon</title>
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Delta Salon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/frontend/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="assets/frontend/css/animate.css">
-    
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/frontend/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/frontend/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/frontend/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/frontend/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/frontend/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="assets/frontend/css/aos.css">
-
-    <link rel="stylesheet" href="assets/frontend/css/ionicons.min.css">
-
-    <link rel="stylesheet" href="assets/frontend/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="assets/frontend/css/jquery.timepicker.css">
-
-    
+    <link rel="stylesheet" href="assets/frontend/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/frontend/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/frontend/css/nice-select.css">
     <link rel="stylesheet" href="assets/frontend/css/flaticon.css">
-    <link rel="stylesheet" href="assets/frontend/css/icomoon.css">
+    <link rel="stylesheet" href="assets/frontend/css/gijgo.css">
+    <link rel="stylesheet" href="assets/frontend/css/animate.css">
+    <link rel="stylesheet" href="assets/frontend/css/slicknav.css">
     <link rel="stylesheet" href="assets/frontend/css/style.css">
-  </head>
-  <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="/">Delta</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+    <!-- <link rel="stylesheet" href="assets/frontend/css/responsive.css"> -->
+</head>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-			<li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="/layanan" class="nav-link">Layanan</a></li>
-	        	<li class="nav-item"><a href="/testimoni" class="nav-link">Galleri</a></li>
-	        	<li class="nav-item"><a href="/produk" class="nav-link">Produk</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-    <section id="home-section" class="hero" style="background-image: url(assets/frontend/images/bg-2.jpg);" data-stellar-background-ratio="0.5">
-		  <div class="home-slider owl-carousel">
-	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text mt-5">
-		          		<span class="subheading">Delta Salon</span>
-						<h1 class="mb-4">Produk yang kami jual</h1>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
-    
-    <section class="ftco-section ftco-degree-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 ftco-animate">
-						<div class="row">
-							<div class="col-md-12 d-flex ftco-animate">
-		            <div class="blog-entry align-self-stretch d-md-flex">
-		              <a href="blog-single.html" class="block-20" style="background-image: url('assets/frontend/images/image_1.jpg');">
-		              </a>
-		              <div class="text d-block pl-md-4">
-		                <h3 class="heading"><a href="#">Nama Produk</a></h3>
-		                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		                <p><a href="#" class="btn btn-primary py-2 px-3">Rp.00000</a></p>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-12 d-flex ftco-animate">
-		            <div class="blog-entry align-self-stretch d-md-flex">
-		              <a href="blog-single.html" class="block-20" style="background-image: url('assets/frontend/images/image_2.jpg');">
-		              </a>
-		              <div class="text d-block pl-md-4">
-		                <h3 class="heading"><a href="#">Nama Produk</a></h3>
-		                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		                <p><a href="#" class="btn btn-primary py-2 px-3">Rp.00000</a></p>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-12 d-flex ftco-animate">
-		            <div class="blog-entry align-self-stretch d-md-flex">
-		              <a href="blog-single.html" class="block-20" style="background-image: url('assets/frontend/images/image_3.jpg');">
-		              </a>
-		              <div class="text d-block pl-md-4">
-		                <h3 class="heading"><a href="#">Nama Produk</a></h3>
-		                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		                <p><a href="#" class="btn btn-primary py-2 px-3">Rp.00000</a></p>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-12 d-flex ftco-animate">
-		            <div class="blog-entry align-self-stretch d-md-flex">
-		              <a href="blog-single.html" class="block-20" style="background-image: url('assets/frontend/images/image_4.jpg');">
-		              </a>
-		              <div class="text d-block pl-md-4">
-		                <h3 class="heading"><a href="#">Nama Produk</a></h3>
-		                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		                <p><a href="#" class="btn btn-primary py-2 px-3">Rp.00000</a></p>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-12 d-flex ftco-animate">
-		            <div class="blog-entry align-self-stretch d-md-flex">
-		              <a href="blog-single.html" class="block-20" style="background-image: url('assets/frontend/images/image_5.jpg');">
-		              </a>
-		              <div class="text d-block pl-md-4">
-		                <h3 class="heading"><a href="#">Nama Produk</a></h3>
-		                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		                <p><a href="#" class="btn btn-primary py-2 px-3">Rp.00000</a></p>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md-12 d-flex ftco-animate">
-		            <div class="blog-entry align-self-stretch d-md-flex">
-		              <a href="blog-single.html" class="block-20" style="background-image: url('assets/frontend/images/image_6.jpg');">
-		              </a>
-		              <div class="text d-block pl-md-4">
-		                <h3 class="heading"><a href="#">Nama Produk</a></h3>
-		                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		                <p><a href="#" class="btn btn-primary py-2 px-3">Rp.00000</a></p>
-		              </div>
-		            </div>
-		          </div>
-						</div>
-						<div class="row mt-5">
-		          <div class="col">
-		            <div class="block-27">
-		            </div>
-		          </div>
-		        </div>
-          </div> <!-- .col-md-8 -->
-          <div class="col-lg-4 sidebar ftco-animate">
-            <div class="sidebar-box ftco-animate">
-            	<h3 class="heading-2">Kategori</h3>
-              <ul class="categories">
-                <li><a href="#">Soflens</a></li>
-                <li><a href="#">Lipsti</a></li>
-                <li><a href="#">Dress</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Makeup</a></li>
-                <li><a href="#">Beauty</a></li>
-              </ul>
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="logo-img">
+                                    <a href="index.html">
+                                        <img src="assets/frontend/img/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+								<ul id="navigation">
+                                        <li><a class="active" href="/">home</a></li>
+                                        <li><a href="/layanan">Layanan</a></li>
+										<li><a href="/galleri">Galleri</a></li>
+										<li><a href="/produk">Produk</a></li>
+                                        <li><a href="/kontak">Kontak</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="sidebar-box ftco-animate">
-              <h3 class="heading-2">Paragrap</h3>
-              <p>deskripsi</p>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section> <!-- .section -->
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo">Delta</h2>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+    </header>
+    <!-- header-end -->
+
+    <!-- bradcam_area_start -->
+    <div class="slider_area">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1 overlay2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <img src="assets/frontend/img/banner/barber_text.png" alt="">
+                            <h3>Delta Salon</h3>
+                            <p>Produk</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Tanya Jawab</a></li>
-                <li><a href="#" class="py-2 d-block">Pribadi</a></li>
-                <li><a href="#" class="py-2 d-block">Syarat & Ketentuan</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Tautan</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Home</a></li>
-                <li><a href="#" class="py-2 d-block">Layanan</a></li>
-                <li><a href="#" class="py-2 d-block">Galleri</a></li>
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Produk</a></li>
-                <li><a href="#" class="py-2 d-block">Kontak</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">punya pertanyaan?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </footer>
-    
-  
+    </div>
+        <!-- bradcam_area_end -->
+<br>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- gallery_area_start -->
+    <div class="gallery_area minus-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title2 text-center mb-90">
+                        <i class="flaticon-scissors"></i>
+                        <h3>Kategorii</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="gallery_active owl-carousel">
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/1.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/1.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/2.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/2.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/3.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/3.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/1.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/1.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/2.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/2.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/3.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/3.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery_area_end -->
+
+    <!-- cutter_muster_start -->
+    <div class="cutter_muster">
+        <div class="container">
+                <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section_title2 text-center mb-90">
+                                <i class="flaticon-scissors"></i>
+                                <h3>Our Cutter Masters</h3>
+                            </div>
+                        </div>
+                    </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/1.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Macau Wilium</h3>
+                            <p>Massage Master</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/2.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Dan Jacky</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/3.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Luka Luka</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_master">
+                        <div class="thumb">
+                            <img src="assets/frontend/img/team/4.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Rona Dana</h3>
+                            <p>Ladies Cut</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cutter_muster_end -->
+
+    <!-- footer -->
+    <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-12 col-lg-">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Delta Salon
+                                </h3>
+                                <p class="footer_text doanar"> <a class="first" href="#">bla bla</a> <br>
+                               </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Alamat
+                                </h3>
+                                <p class="footer_text">Jl. Pasawahan Ruko B<br>
+                                    0875 5679 9743 <br>
+                                    <a class="domain" href="#"></a>Deltasalon@beautysalon.com</p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Navigasi
+                                </h3>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Tentang</a></li>
+                                    <li><a href="#">Layanan</a></li>
+									<li><a href="#">Galleri</a></li>
+									<li><a href="#">Produk</a></li>
+									<li><a href="#">Kontak</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- footer -->
+    <!-- link that opens popup -->
 
 
-  <script src="assets/frontend/js/jquery.min.js"></script>
-  <script src="assets/frontend/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="assets/frontend/js/popper.min.js"></script>
-  <script src="assets/frontend/js/bootstrap.min.js"></script>
-  <script src="assets/frontend/js/jquery.easing.1.3.js"></script>
-  <script src="assets/frontend/js/jquery.waypoints.min.js"></script>
-  <script src="assets/frontend/js/jquery.stellar.min.js"></script>
-  <script src="assets/frontend/js/owl.carousel.min.js"></script>
-  <script src="assets/frontend/js/jquery.magnific-popup.min.js"></script>
-  <script src="assets/frontend/js/aos.js"></script>
-  <script src="assets/frontend/js/jquery.animateNumber.min.js"></script>
-  <script src="assets/frontend/js/bootstrap-datepicker.js"></script>
-  <script src="assets/frontend/js/jquery.timepicker.min.js"></script>
-  <script src="assets/frontend/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="assets/frontend/js/google-map.js"></script>
-  <script src="assets/frontend/js/main.js"></script>
-    
-  </body>
+    <!-- JS here -->
+    <script src="assets/frontend/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/frontend/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/frontend/js/popper.min.js"></script>
+    <script src="assets/frontend/js/bootstrap.min.js"></script>
+    <script src="assets/frontend/js/owl.carousel.min.js"></script>
+    <script src="assets/frontend/js/isotope.pkgd.min.js"></script>
+    <script src="assets/frontend/js/ajax-form.js"></script>
+    <script src="assets/frontend/js/waypoints.min.js"></script>
+    <script src="assets/frontend/js/jquery.counterup.min.js"></script>
+    <script src="assets/frontend/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/frontend/js/scrollIt.js"></script>
+    <script src="assets/frontend/js/jquery.scrollUp.min.js"></script>
+    <script src="assets/frontend/js/wow.min.js"></script>
+    <script src="assets/frontend/js/nice-select.min.js"></script>
+    <script src="assets/frontend/js/jquery.slicknav.min.js"></script>
+    <script src="assets/frontend/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/frontend/js/plugins.js"></script>
+    <script src="assets/frontend/js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="assets/frontend/js/contact.js"></script>
+    <script src="assets/frontend/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/frontend/js/jquery.form.js"></script>
+    <script src="assets/frontend/js/jquery.validate.min.js"></script>
+    <script src="assets/frontend/js/mail-script.js"></script>
+
+    <script src="assets/frontend/js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+        var timepicker = $('#timepicker').timepicker({
+         format: 'HH.MM'
+     });
+    </script>
+</body>
+
 </html>
