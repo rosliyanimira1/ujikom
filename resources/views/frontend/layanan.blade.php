@@ -38,22 +38,26 @@
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid p-0">
                     <div class="row align-items-center no-gutters">
-                            <div class="col-xl-3 col-lg-3">
+                            <div class="col-xl-6 col-lg-3">
                                 <div class="logo-img">
-                                    <a href="index.html">
-                                        <img src="assets/frontend/img/logo.png" alt="">
+                                    <a href="/">
+                                    <img src="assets/frontend/images/logo.png" alt="" width="40%">
                                     </a>
                                 </div>
                             </div>
                         <div class="col-xl-6 col-lg-6">
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
-                                    <<ul id="navigation">
+                                    <ul id="navigation">
                                         <li><a class="active" href="/">home</a></li>
-                                        <li><a href="/layanan">Layanan</a></li>
+                                        <li><a  class="active" href="#">Layanan<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="layanan">Rambut</a></li>
+                                                    <li><a href="layanan1">Wajah</a></li>
+                                                </ul>
+                                            </li>
 										<li><a href="/galleri">Galleri</a></li>
 										<li><a href="/produk">Produk</a></li>
-                                        <li><a href="/kontak">Kontak</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -74,7 +78,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title3 padding_plus text-center mb-90">
-                        <h3>Layanan kami</h3>
+                        <h3>Layanan Rambut</h3>
                     </div>
                 </div>
             </div>
@@ -87,14 +91,8 @@
                                     <div class="service_inner d-flex align-items-center">
                                         <div class="thumb">
                                             
-                                            <img id="myImg" src="{{ asset('assets/img/layanan/'.$data->Gambar) }}" alt="{{ $data->nama_layanan }}" style="width:100%;max-width:300px">
+                                            <img src="{{ asset('assets/img/layanan/'.$data->Gambar) }}" alt="{{ $data->nama_layanan }}" style="width:60px;height:60px">
 
-                                            <!-- The Modal -->
-                                            <div id="myModal" class="modal">
-                                            <span class="close">&times;</span>
-                                            <img class="modal-content" id="img01">
-                                            <div id="caption"></div>
-                                            </div>
                                         </div>
                                         <span>{{ $data->nama_layanan }}</span>
                                     </div>
@@ -192,88 +190,88 @@
         </div>
     </div>
     <!-- service_area_end -->
-
-
-    <!-- cutter_muster_start -->
-    <div class="cutter_muster">
+    <!-- gallery_area_start -->
+    <div class="gallery_area">
         <div class="container">
-                <div class="row">
-                        <div class="col-xl-12">
-                            <div class="section_title2 text-center mb-90">
-                                <i class="flaticon-scissors"></i>
-                                <h3>Our Cutter Masters</h3>
-                            </div>
-                        </div>
-                    </div>
             <div class="row">
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/1.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Macau Wilium</h3>
-                            <p>Massage Master</p>
-                        </div>
+                <div class="col-xl-12">
+                    <div class="section_title2 text-center mb-90">
+                        <i class="flaticon-scissors"></i>
+                        <h3>Gallery</h3>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/2.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="gallery_active owl-carousel">
+                    @foreach ($layanan as $data)
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/img/layanan/'.$data->Gambar) }}" alt="{{ $data->nama_layanan }}">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="{{ asset('assets/img/layanan/'.$data->Gambar) }}">
+                                    <span>{{ $data->nama_layanan }}</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="master_name text-center">
-                            <h3>Dan Jacky</h3>
-                            <p>Mens Cut</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/3.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                        @endforeach
+                        <!-- <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/2.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/2.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="master_name text-center">
-                            <h3>Luka Luka</h3>
-                            <p>Mens Cut</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/4.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/3.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/3.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="master_name text-center">
-                            <h3>Rona Dana</h3>
-                            <p>Ladies Cut</p>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/1.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/1.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/2.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/2.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="assets/frontend/img/gallery/3.png" alt="">
+                                <div class="image_hover">
+                                    <a class="popup-image" href="assets/frontend/img/gallery/3.png">
+                                        <i class="ti-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- cutter_muster_end -->
+    <!-- gallery_area_end -->
 
     <!-- footer -->
     <footer class="footer">
@@ -323,12 +321,10 @@
                                     Navigasi
                                 </h3>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Tentang</a></li>
+                                <li><a href="#">Home</a></li>
                                     <li><a href="#">Layanan</a></li>
 									<li><a href="#">Galleri</a></li>
 									<li><a href="#">Produk</a></li>
-									<li><a href="#">Kontak</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -22,7 +22,8 @@
                                     <br>
                                     <div class="from-group-inner">
                                             <label>Deskripsi</label>
-                                            <input name="Deskripsi" type="text" class="form-control" required/>
+                                            <!-- <input name="Deskripsi" type="text" class="form-control" required/> -->
+                                            <textarea name="Deskripsi" id="" cols="30" rows="10" class="form-control"></textarea>
                                     </div>
                                     <br>  
                                     <div class="form-group-inner">

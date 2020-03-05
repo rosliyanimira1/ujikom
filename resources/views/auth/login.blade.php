@@ -32,7 +32,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="{{ route('login') }}" autocomplete="on" action="{{ route('login') }}">
+                            <form  action="{{ route('login') }}" method="post">
                                 @csrf
  
                                 <h1>Log in</h1> 
@@ -53,37 +53,7 @@
 								</p>
                             </form>
                         </div>
-
-                        <div id="register" class="animate form">
-                            <form  action="{{ route('register') }}" autocomplete="on" method="post" action="{{ route('register') }}">
-                                @csrf 
-                                <h1> Sign up </h1> 
-                                <p> 
-                                    <label for="name" class="uname" data-icon="u">Name</label>
-                                    <input id="name" name="name" required="required" type="text" placeholder="Name" />
-                                </p>
-                                <p> 
-                                    <label for="email" class="youmail" data-icon="e" > Email</label>
-                                    <input id="email" name="email" required="required" type="email" placeholder="Email"/> 
-                                </p>
-                                <p> 
-                                    <label for="password" class="youpasswd" data-icon="p">Password </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="Password"/>
-                                </p>
-                                <p> 
-                                    <label for="password_confirmation" class="youpasswd" data-icon="p">Konfirmasi Password </label>
-                                    <input id="password_confirmation" name="password_confirmation" required="required" type="password" placeholder="Konfirmasi password"/>
-                                </p>
-                                <p class="signin button"> 
-									<input type="submit" value="Sign up"/> 
-								</p>
-                                <p class="change_link">  
-									Sudah Membuat?
-									<a href="#tologin" class="to_register"> Masuk</a>
-								</p>
-                            </form>
-                        </div>
-						
+						@include('auth.register')
                     </div>
                 </div>  
             </section>

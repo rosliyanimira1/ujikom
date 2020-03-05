@@ -41,7 +41,7 @@
 								<div class="col-xl-3 col-lg-3">
 									<div class="logo-img">
 										<a href="index.html">
-											<img src="assets/frontend/img/logo.png" alt="">
+                                        <img src="assets/frontend/images/logo.png" alt="" width="60%">
 										</a>
 									</div>
 								</div>
@@ -50,10 +50,14 @@
 									<nav>
 										<ul id="navigation">
                                         <li><a class="active" href="/">home</a></li>
-                                        <li><a href="/layanan">Layanan</a></li>
+                                        <li><a  class="active" href="#">Layanan<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="layanan">Rambut</a></li>
+                                                    <li><a href="layanan1">Wajah</a></li>
+                                                </ul>
+                                            </li>
 										<li><a href="/galleri">Galleri</a></li>
 										<li><a href="/produk">Produk</a></li>
-                                        <li><a href="/kontak">Kontak</a></li>
                                     </ul>
 									</nav>
 								</div>
@@ -75,9 +79,8 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="slider_text text-center">
-                            <img src="assets/frontend/img/banner/barber_text.png" alt="">
                             <h3>Delta Salon</h3>
-                            <p>Galleri</p>
+                            <p>Galleri Salon</p>
                         </div>
                     </div>
                 </div>
@@ -93,50 +96,17 @@
                             <div class="section_title2 text-center mb-90">
                                 <h3>Kumpulan foto</h3>
                             </div>
-                        </div>
                 </div>
-				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g1.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g1.jpg);"></div>
-						</a>
+            
+			<div class="row gallery-item">
+				@foreach ($galleri as $data)
+				<div class="col-md-3">
+					<img id="myImg" src="{{ asset('assets/img/galleri/'.$data->Gambar) }}" class="img-pop-up" style="width:200px;height:200px">
+					<div class="single-gallery-image" style="background: url(assets/frontend/img/galleri/'.$data->Gambar);"></div>
 					</div>
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g2.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g2.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g3.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g3.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g4.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g4.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g5.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g5.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g6.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g6.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g7.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g7.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="assets/frontend/img/elements/g8.jpg" class="img-pop-up">
-							<div class="single-gallery-image" style="background: url(assets/frontend/img/elements/g8.jpg);"></div>
-						</a>
-					</div>
+					@endforeach
 				</div>
+			</div>
 			</div>
 		</div>
 
@@ -188,12 +158,10 @@
                                     Navigasi
                                 </h3>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Tentang</a></li>
+                                <li><a href="#">Home</a></li>
                                     <li><a href="#">Layanan</a></li>
 									<li><a href="#">Galleri</a></li>
 									<li><a href="#">Produk</a></li>
-									<li><a href="#">Kontak</a></li>
                                 </ul>
                             </div>
                         </div>

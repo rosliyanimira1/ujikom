@@ -53,6 +53,7 @@ class ProdukController extends Controller
         $produk->Nama_produk = $request->Nama_produk;
         $produk->Deskripsi = $request->Deskripsi;
         $produk->slug = str::slug($request->Nama_produk,'-');
+        $produk->id_kategori = $request->Nama_kategori;
         $produk->save();
         return redirect()->route('produk.index');
     }
@@ -98,7 +99,6 @@ class ProdukController extends Controller
             $path = public_path() . '/assets/img/produk/';
             $filename = Str::random(6) . '_' . $file->getClientOriginalName();
             $upload = $file->move($path, $filename);
-            $produk->Gambar = $filename;
 
             if($produk->Gambar){
                 $old_Gambar = $produk->Gambar;

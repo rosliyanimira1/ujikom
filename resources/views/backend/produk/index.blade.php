@@ -27,12 +27,12 @@
                             <tr>
                                 <td>{{$no++}}</td>
                                 <td><img src="{{ asset('assets/img/produk/'.$data->Gambar) }}" alt="" height="100px" width="150px"></td>
-                                <td style="text-align:center"><a href="{{ route('produk.edit', $data->id) }}" class="btn btn-warning">Edit Data</a></td>
-                                <td style="text-align:center"><a href="{{ route('produk.show', $data->id) }}" class="btn btn-info">Detail Data</a></td>
-                                <td style="text-align:center">
                                 <td>{{ $data->Nama_produk }}</td>
                                 <td>{{ $data->Deskripsi }}</td>
                                 <td>{{ $data->Slug }}</td>
+                                <td style="text-align:center"><a href="{{ route('produk.edit', $data->id) }}" class="btn btn-warning">Edit Data</a></td>
+                                <td style="text-align:center"><a href="{{ route('produk.show', $data->id) }}" class="btn btn-info">Detail Data</a></td>
+                                <td style="text-align:center">
                                     <form action="{{ route('produk.destroy', $data->id) }}" method="post">
                                         @csrf
                                         <input type="hidden" name="_method" value="DELETE">

@@ -23,7 +23,7 @@
                                     <br>
                                     <div class="from-group-inner">
                                             <label>Deskripsi</label>
-                                            <input name="Dskripsi" type="text" class="form-control" required  value="{{$produk->Deskripsi}}"/>
+                                            <textarea name="Deskripsi" id="" cols="30" rows="10" class="form-control"  value="{{$produk->Deskripsi}}"></textarea>
                                     </div>  
                                     <br>
                                 </div>

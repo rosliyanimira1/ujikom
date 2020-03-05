@@ -40,8 +40,8 @@
                     <div class="row align-items-center no-gutters">
                             <div class="col-xl-3 col-lg-3">
                                 <div class="logo-img">
-                                    <a href="index.html">
-                                        <img src="assets/frontend/img/logo.png" alt="">
+                                    <a href="/">
+                                    <img src="assets/frontend/images/logo.png" alt="" width="60%">
                                     </a>
                                 </div>
                             </div>
@@ -50,10 +50,14 @@
                                 <nav>
 								<ul id="navigation">
                                         <li><a class="active" href="/">home</a></li>
-                                        <li><a href="/layanan">Layanan</a></li>
+                                        <li><a  class="active" href="#">Layanan<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="layanan">Rambut</a></li>
+                                                    <li><a href="layanan1">Wajah</a></li>
+                                                </ul>
+                                            </li>
 										<li><a href="/galleri">Galleri</a></li>
 										<li><a href="/produk">Produk</a></li>
-                                        <li><a href="/kontak">Kontak</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -75,7 +79,6 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="slider_text text-center">
-                            <img src="assets/frontend/img/banner/barber_text.png" alt="">
                             <h3>Delta Salon</h3>
                             <p>Produk</p>
                         </div>
@@ -86,168 +89,93 @@
     </div>
         <!-- bradcam_area_end -->
 <br>
-
-    <!-- gallery_area_start -->
-    <div class="gallery_area minus-padding">
+<br>
+<section class="blog_area section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title2 text-center mb-90">
-                        <i class="flaticon-scissors"></i>
-                        <h3>Kategorii</h3>
+            <div class="col-xl-12">
+                <div class="section_title2 text-center mb-90">
+                    <h3>Produk yang kami jual</h3>
+                </div>
+                </div>
+                <!-- @foreach($produk as $item)
+                <a href="/produk/{{$item->slug}}">{{$item->Nama_produk}}</a>
+                @endforeach -->
+
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+                    @foreach($produk as $data)
+                    <article class="blog_item">
+                            <img src="{{ asset('assets/img/produk/'.$data->Gambar) }}" alt="" width="60%">
+
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="single-blog.html">
+                                <h2>{{$data->Nama_produk}}</h2>
+                            </a>
+                            <p>{{$data->Deskripsi}}</p>
+                        </div>
+                    </article>
+                    @endforeach
+
+                        <nav class="blog-pagination justify-content-center d-flex">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Previous">
+                                        <i class="ti-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Next">
+                                        <i class="ti-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="gallery_active owl-carousel">
-                        <div class="single_gallery">
-                            <div class="thumb">
-                                <img src="assets/frontend/img/gallery/1.png" alt="">
-                                <div class="image_hover">
-                                    <a class="popup-image" href="assets/frontend/img/gallery/1.png">
-                                        <i class="ti-plus"></i>
-                                    </a>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget search_widget">
+                            <form action="/produk/search" method="get">
+                            {{csrf_field()}}
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input name="search" type="text" class="form-control" placeholder='Search Produk'
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Search Produk'">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="button"><i class="ti-search"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="single_gallery">
-                            <div class="thumb">
-                                <img src="assets/frontend/img/gallery/2.png" alt="">
-                                <div class="image_hover">
-                                    <a class="popup-image" href="assets/frontend/img/gallery/2.png">
-                                        <i class="ti-plus"></i>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                    type="submit">Search</button>
+                            </form>
+                        </aside>
+
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title">Kategori</h4>
+                            @foreach($kategori as $data)
+                            <ul class="list cat-list">
+                                <li>
+                                    <a href="#" class="d-flex">
+                                        <p>{{$data->Nama_kategori}}</p>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_gallery">
-                            <div class="thumb">
-                                <img src="assets/frontend/img/gallery/3.png" alt="">
-                                <div class="image_hover">
-                                    <a class="popup-image" href="assets/frontend/img/gallery/3.png">
-                                        <i class="ti-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_gallery">
-                            <div class="thumb">
-                                <img src="assets/frontend/img/gallery/1.png" alt="">
-                                <div class="image_hover">
-                                    <a class="popup-image" href="assets/frontend/img/gallery/1.png">
-                                        <i class="ti-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_gallery">
-                            <div class="thumb">
-                                <img src="assets/frontend/img/gallery/2.png" alt="">
-                                <div class="image_hover">
-                                    <a class="popup-image" href="assets/frontend/img/gallery/2.png">
-                                        <i class="ti-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_gallery">
-                            <div class="thumb">
-                                <img src="assets/frontend/img/gallery/3.png" alt="">
-                                <div class="image_hover">
-                                    <a class="popup-image" href="assets/frontend/img/gallery/3.png">
-                                        <i class="ti-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                                </li>
+                            </ul>
+                            @endforeach
+                        </aside>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- gallery_area_end -->
-
-    <!-- cutter_muster_start -->
-    <div class="cutter_muster">
-        <div class="container">
-                <div class="row">
-                        <div class="col-xl-12">
-                            <div class="section_title2 text-center mb-90">
-                                <i class="flaticon-scissors"></i>
-                                <h3>Our Cutter Masters</h3>
-                            </div>
-                        </div>
-                    </div>
-            <div class="row">
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/1.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Macau Wilium</h3>
-                            <p>Massage Master</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/2.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Dan Jacky</h3>
-                            <p>Mens Cut</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/3.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Luka Luka</h3>
-                            <p>Mens Cut</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="single_master">
-                        <div class="thumb">
-                            <img src="assets/frontend/img/team/4.png" alt="">
-                            <div class="social_link">
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="master_name text-center">
-                            <h3>Rona Dana</h3>
-                            <p>Ladies Cut</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- cutter_muster_end -->
+    </section>
 
     <!-- footer -->
     <footer class="footer">
@@ -297,12 +225,10 @@
                                     Navigasi
                                 </h3>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Tentang</a></li>
+                                <li><a href="#">Home</a></li>
                                     <li><a href="#">Layanan</a></li>
 									<li><a href="#">Galleri</a></li>
 									<li><a href="#">Produk</a></li>
-									<li><a href="#">Kontak</a></li>
                                 </ul>
                             </div>
                         </div>

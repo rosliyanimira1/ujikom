@@ -24,6 +24,7 @@
                                             <label>Gambar</label>
                                             <input class="form-control mobile-phone-number" type="file" name="Gambar" required>
                                     </div>
+                                    
                                     <br>   
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
@@ -23,19 +23,19 @@
                                 <h1> Sign up </h1> 
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                    <input id="usernamesignup" name="username" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
                                 <p> 
                                     <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <input id="emailsignup" name="email" required="required" type="email" placeholder="mysupermail@mail.com"/> 
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup" name="password" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup_confirm" name="password" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p class="signin button"> 
 									<input type="submit" value="Sign up"/> 
@@ -47,4 +47,34 @@
                             </form>
                         </div>
     </body>
-</html>
+</html> -->
+
+<div id="register" class="animate form">
+                            <form  action="{{ route('register') }}" autocomplete="on" method="post">
+                                @csrf 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="name" class="uname" data-icon="u">Name</label>
+                                    <input id="name" name="name" required="required" type="text" placeholder="Name" />
+                                </p>
+                                <p> 
+                                    <label for="email" class="youmail" data-icon="e" > Email</label>
+                                    <input id="email" name="email" required="required" type="email" placeholder="Email"/> 
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p">Password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="Password"/>
+                                </p>
+                                <p> 
+                                    <label for="password_confirmation" class="youpasswd" data-icon="p">Konfirmasi Password </label>
+                                    <input id="password_confirmation" name="password_confirmation" required="required" type="password" placeholder="Konfirmasi password"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="Sign up"/> 
+								</p>
+                                <p class="change_link">  
+									Sudah Membuat?
+									<a href="#tologin" class="to_register"> Masuk</a>
+								</p>
+                            </form>
+                        </div>

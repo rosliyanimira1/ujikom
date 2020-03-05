@@ -16,10 +16,6 @@
                                         <input class="form-control mobile-phone-number" type="file" name="Gambar" required>
                                     </div>
                                     <br>
-                                    <div class="from-group-inner">
-                                            <label>Deskripsi</label>
-                                            <input name="Deskripsi" type="text" class="form-control" required  value="{{$galleri->galleri}}"/>
-                                    </div> 
                                 </div>
                                 <br>
                             </div>

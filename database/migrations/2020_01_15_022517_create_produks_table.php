@@ -18,8 +18,8 @@ class CreateProduksTable extends Migration
             $table->String('Gambar');
             $table->String('Nama_produk');
             $table->Text('Deskripsi');
-            $table->unsignedBigInteger('kategori');
-            $table->foreign('kategori')->references('id')->on('kategoris')->ondelete('cascade');
+            $table->unsignedBigInteger('id_kategori');
+            $table->foreign('id_kategori')->references('id')->on('kategoris')->ondelete('cascade');
             $table->String('Slug');
             $table->timestamps();
         });

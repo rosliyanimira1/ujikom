@@ -74,7 +74,8 @@
                         <li>
                             <a class="has-arrow" href="/" aria-expanded="false"><span class="educate-icon educate-home icon-wrap"></span> <span class="mini-click-non">Home</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="/layanan"><span class="mini-sub-pro">Layanan</span></a></li>
+                                <li><a title="All Students" href="/layanan"><span class="mini-sub-pro">Layanan rambut</span></a></li>
+                                <li><a title="All Students" href="/layanan1"><span class="mini-sub-pro">Layanan wajah</span></a></li>
                                 <li><a title="Add Students" href="a/galleri"><span class="mini-sub-pro">Galleri</span></a></li>
                                 <li><a title="Edit Students" href="/Produk"><span class="mini-sub-pro">Produk</span></a></li>
                                 <li><a title="Students Profile" href="/Kontak"><span class="mini-sub-pro">Kontak</span></a></li>
@@ -111,10 +112,14 @@
 												</button>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="/admin/layanan" class="nav-link">Layanan</a>
+                                                <li class="nav-item"><a href="/admin/jambuka" class="nav-link">Jam Buka</a>
+                                                </li>
+                                                <li class="nav-item"><a href="/admin/layanan" class="nav-link">Layanan rambut</a>
+                                                </li>
+                                                <li class="nav-item"><a href="/admin/layanan1" class="nav-link">Layanan wajah</a>
                                                 </li>
                                                 <li class="nav-item"><a href="/admin/galleri" class="nav-link">Galleri</a>
                                                 </li>
@@ -125,30 +130,77 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img src="/assets/admin/kiaalap/img/product/pro4.jpg" alt="" />
-															<span class="admin-name">Admin Salon</span>
-															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-														</a>
+                                                      <img src="/assets/frontend/images/.jpg" alt="" />
+                                                      <span class="admin-name">Admin Salon</span>
+                                                      <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+                                                    </a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="#"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        <li>
+                                                          <a class="dropdown-item" href="{{ route('logout') }}"
+                                                            onclick="event.preventDefault();
+                                                                          document.getElementById('logout-form').submit();">
+                                                              {{ __('Logout') }}
+                                                          </a>
+
+                                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                              @csrf
+                                                          </form>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="mobile-menu-nav">
+                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Backend <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul class="collapse dropdown-header-top">
+                                                <li><a href="/admin/jambuka">Jam Buka</a></li>
+                                                <li><a href="/admin/layanan">Layanan rambut</a></li>
+                                                <li><a href="/admin/layanan1">Layanan wajah</a></li>
+                                                <li><a href="/admin/galleri">Galleri</a></li>
+                                                <li><a href="/admin/produk">Produk</a></li>
+                                                <li><a href="admin/kategori">Kategori</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Frontend <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demoevent" class="collapse dropdown-header-top">
+                                                <li><a href="/">Home</a>
+                                                </li>
+                                                <li><a href="/layanan">Layanan rambut</a>
+                                                </li>
+                                                <li><a href="/layanan1">Layanan wajah</a>
+                                                </li>
+                                                <li><a href="/galleri">Galleri</a>
+                                                </li>
+                                                <li><a href="/produk">Produk</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
         <div class="courses-area mg-b-15">
             <div class="container-fluid">
                 <div class="row">

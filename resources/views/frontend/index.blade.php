@@ -40,8 +40,8 @@
                     <div class="row align-items-center no-gutters">
                             <div class="col-xl-3 col-lg-3">
                                 <div class="logo-img">
-                                    <a href="index.html">
-                                        <img src="assets/frontend/img/logo.png" alt="">
+                                    <a href="/">
+                                        <img src="assets/frontend/images/logo.png" alt="" width="60%">
                                     </a>
                                 </div>
                             </div>
@@ -50,10 +50,14 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="/">home</a></li>
-                                        <li><a href="/layanan">Layanan</a></li>
+                                        <li><a  class="active" href="#">Layanan<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="layanan">Rambut</a></li>
+                                                    <li><a href="layanan1">Wajah</a></li>
+                                                </ul>
+                                            </li>
 										<li><a href="/galleri">Galleri</a></li>
 										<li><a href="/produk">Produk</a></li>
-                                        <li><a href="/kontak">Kontak</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -75,7 +79,6 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="slider_text text-center">
-                            <img src="assets/frontend/img/banner/barber_text.png" alt="">
                             <h3>Delta Salon</h3>
                             <p>Beauty Salon</p>
                         </div>
@@ -92,12 +95,13 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6">
                     <div class="about_thumb">
-                        <img src="assets/frontend/img/about/about_lft.png" alt="">
+                        <img src="assets/frontend/images/bg1_1.jpg" alt="">
                         <div class="opening_hour text-center">
                                 <i class="flaticon-clock"></i>
-                                <h3>Jam Buka</h3>
-                                <p>Mon-Fri (9.00-11.00) <br>
-                                        Sat (10.00-4.00)</p>
+                                @foreach($jambuka as $data)
+                                <h3>{{$data->Hari}}</h3>
+                                <p>{{$data->Jam_buka}}-{{$data->Jam_tutup}}</p>
+                                @endforeach
                         </div>
                     </div>
                 </div>
@@ -207,11 +211,9 @@
                                 </h3>
                                 <ul>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">Tentang</a></li>
                                     <li><a href="#">Layanan</a></li>
 									<li><a href="#">Galleri</a></li>
 									<li><a href="#">Produk</a></li>
-									<li><a href="#">Kontak</a></li>
                                 </ul>
                             </div>
                         </div>
